@@ -4,33 +4,9 @@ body {
   background-color: brown;
 }
 
-header {
-  background-color: #333;
+footer {
   color: white;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #cae9e6;
+  text-align: center;
 }
 
 #hero {
@@ -50,9 +26,11 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-  margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .hero-p {
@@ -61,6 +39,39 @@ nav ul li a:hover {
   line-height: 1.5;
   letter-spacing: 1px;
   word-spacing: 1.5px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 300px;
+    padding: 3rem 1rem;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    height: 250px;
+    padding: 2rem 1rem;
+  }
+
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-p {
+    font-size: 0.9rem;
+  }
 }
 
 .activities {
@@ -68,7 +79,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .activity {
@@ -108,58 +119,9 @@ nav ul li a:hover {
 
 #subtitle {
   text-align: center;
-  padding: 20px;
   font-size: 1.5rem;
   color: #fff;
-}
-
-.photos {
-  text-align: center;
-  padding: 2rem;
-}
-
-.photos h2 {
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-}
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.photo {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.photo:hover {
-  transform: scale(1.05);
-}
-
-.photo img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.photo h3 {
-  color: #333;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.photo p {
-  color: #666;
-  font-size: 1rem;
-  line-height: 1.6;
+  margin-top: 5rem;
 }
 
 .guide {
@@ -210,35 +172,13 @@ nav ul li a:hover {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  #hero {
-    height: 300px;
-    padding: 3rem 1rem;
-  }
-
-  #hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-p {
-    font-size: 1rem;
-  }
-
   .activity {
     flex: 1 1 100%;
     max-width: 100%;
   }
 
   .activity img {
-    height: 150px;
-  }
-
-  .photo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .photo img {
     height: 150px;
   }
 
@@ -261,19 +201,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
-  #hero {
-    height: 250px;
-    padding: 2rem 1rem;
-  }
-
-  #hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-p {
-    font-size: 0.9rem;
-  }
-
   .activity img {
     height: 120px;
   }
